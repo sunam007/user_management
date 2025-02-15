@@ -2,6 +2,8 @@ import express from "express";
 import mongoose from "mongoose";
 import userRoutes from "./routes/userRoutes.js";
 import { seedUsers } from "./utils/seeder.js";
+import helmet from "helmet";
+import cors from "cors";
 
 const app = express();
 app.use(express.json());
