@@ -3,7 +3,6 @@ import mongoose from "mongoose";
 import userRoutes from "./routes/userRoutes.js";
 import { seedUsers } from "./utils/seeder.js";
 
-
 const app = express();
 app.use(express.json());
 
@@ -14,6 +13,11 @@ mongoose
   .connect(LOCAL_URI)
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.error("MongoDB connection error:", err));
+
+//Middleware
+app.use(helmet());
+app.use(cors());
+app.use(express.json());
 
 // Routes
 app.use("/api/v1/users", userRoutes);
