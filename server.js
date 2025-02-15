@@ -1,12 +1,8 @@
-// const express = require("express");
-// const mongoose = require("mongoose");
 import express from "express";
 import mongoose from "mongoose";
 import userRoutes from "./routes/userRoutes.js";
 import { seedUsers } from "./utils/seeder.js";
 
-// const userRoutes = require("./routes/userRoutes");
-// const { seedUsers } = require("./utils/seeder");
 
 const app = express();
 app.use(express.json());

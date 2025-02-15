@@ -19,19 +19,15 @@ const userSchema = new mongoose.Schema(
     },
     city: {
       type: String,
-      required: true,
     },
     state: {
       type: String,
-      required: true,
     },
     country: {
       type: String,
-      required: true,
     },
     image_url: {
       type: String,
-      required: true,
     },
   },
   {
