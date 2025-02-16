@@ -9,7 +9,7 @@ export const seedUsers = async () => {
       city: "New York",
       state: "NY",
       country: "USA",
-      image_url: "https://example.com/john.jpg",
+      image_url: "https://picsum.photos/200",
     },
     {
       name: "Jane Smith",
@@ -18,7 +18,7 @@ export const seedUsers = async () => {
       city: "Los Angeles",
       state: "CA",
       country: "USA",
-      image_url: "https://example.com/jane.jpg",
+      image_url: "https://picsum.photos/200",
     },
   ];
 

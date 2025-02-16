@@ -24,7 +24,8 @@ app.use(express.json());
 // Routes
 app.use("/api/v1/users", userRoutes);
 
-seedUsers();
+//uncomment the seedUsers function if you want to seed the database with some users
+// seedUsers();
 
 // Start server
 const PORT = process.env.PORT || 8000;
